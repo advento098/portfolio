@@ -1,0 +1,36 @@
+ul {
+  height: 4em;
+  display: flex;
+  border: 1px solid red;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+li > a {
+  cursor: pointer;
+}
+
+ul > :first-child > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+ul > li:nth-child(2) {
+  justify-self: flex-end;
+  min-width: 500px;
+  max-width: 500px;
+  margin-left: auto;
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-evenly;
+
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 1.2rem;
+}
