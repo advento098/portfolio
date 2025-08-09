@@ -1,3 +1,5 @@
+import Capstone from "./components/Capstone";
+import Contact from "./components/Contact";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import Projects from "./components/Projects";
@@ -10,6 +12,8 @@ function App() {
       <HeroSection />
       <Stack />
       <Projects />
+      <Capstone />
+      <Contact />
     </>
   );
 }
