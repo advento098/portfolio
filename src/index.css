@@ -26,25 +26,64 @@
   --color-8: #a7ff83;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.material-symbols-outlined {
+  animation: scrollDownIcon 1s linear alternate infinite;
+}
+
 a {
   text-decoration: none;
 }
 
-* {
-  /* margin: 0;
-  padding: 0; */
-  box-sizing: border-box;
+header {
+  mask-image: linear-gradient(to bottom, black 90%, transparent);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-image: linear-gradient(to right, black, transparent);
+  width: 20%;
+  height: 100%;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 50;
+  background-image: linear-gradient(to right, transparent, black);
+  width: 20%;
+  height: 100%;
+}
+
+.scroller {
+  animation: iconScroller 15s infinite linear;
+}
+
+@keyframes iconScroller {
+  from {
+    transform: translateX(0);
   }
-  a:hover {
-    color: #747bff;
+
+  to {
+    transform: translateX(-100%);
   }
-  button {
-    background-color: #f9f9f9;
+}
+
+@keyframes scrollDownIcon {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100%;
   }
 }

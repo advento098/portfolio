@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="fixed inset-0 z-10 flex items-center border-2 justify-center h-15">
+    <header className="fixed inset-0 z-50 flex items-center justify-center h-20 backdrop-blur-xl">
       <nav className="text-xl flex gap-15">
         <a href="#Home">Home</a>
         <a href="#My Works">My Works</a>
