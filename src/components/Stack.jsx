@@ -1,8 +1,9 @@
 import StackIcon from "tech-stack-icons";
+import Section from "../ui/Section";
 
 export default function Stack() {
   return (
-    <section className="bg-black flex flex-col gap-6 items-center p-10">
+    <Section>
       <h1 className="text-center text-2xl font-light">Tech and tools I use</h1>
       {/* Scrolling tech effect */}
       <div className="w-11/12 container whitespace-nowrap overflow-hidden py-5 relative">
@@ -41,6 +42,6 @@ export default function Stack() {
           <StackIcon name="github" className="size-13 ml-10" />
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

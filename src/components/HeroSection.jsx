@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import HeroImage from "../assets/portfolio_hero_image.svg";
+import Section from "../ui/Section";
 
 export default function HeroSection() {
   // Place holder for height difference
@@ -22,9 +22,9 @@ export default function HeroSection() {
     //     <img src={HeroImage} alt="logo" />
     //   </div>
     // </section>
-    <section
+    <Section
       id="Home"
-      className="relative flex flex-col overflow-hidden bg-black -z-10 items-center h-screen pt-15"
+      className="relative overflow-hidden bg-black -z-10 pt-15 px-0"
     >
       <div className="z-10 mt-5 mb-2 w-60">
         <img src={HeroImage} alt="logo" />
@@ -35,12 +35,12 @@ export default function HeroSection() {
           Pons Anthony Advento
         </h1>
         <h3>Web Developer | Computer Engineer | Tech Enthusiast</h3>
-        <p className="mt-10 px-7 text-sm/8">
+        <p className="mt-5 px-7 text-sm/8">
           I am a computer engineering graduate passionate about web development
           as it combines creativity and critical thinking while solving
           practical solutions.
         </p>
-        <button className="mt-10 text-xl font-bold max-w-4/12 bg-[#00c4cc] rounded-2xl px-5 py-2">
+        <button className="mt-7 text-xl font-bold max-w-4/12 bg-[#00c4cc] rounded-2xl px-5 py-2">
           Get my CV
         </button>
         <div className="flex mt-3 gap-3">
@@ -48,7 +48,7 @@ export default function HeroSection() {
           <a className="fab fa-linkedin text-2xl text-[#00c4cc]"></a>
           <a className="fab fa-github text-2xl text-[#00c4cc]"></a>
         </div>
-        <span className="material-symbols-outlined mt-10 size-10 text-center">
+        <span className="material-symbols-outlined mt-7 size-10 text-center">
           swipe_down
         </span>
       </div>
@@ -65,6 +65,6 @@ export default function HeroSection() {
         <div className="absolute size-30 bottom-20 left-40 blur-3xl rounded-full bg-radial from-[#00c4cc] to-transparent" />
         <div className="absolute size-30 bottom-40 left-70 blur-3xl rounded-full bg-radial from-[#00c4cc] to-transparent" />
       </div>
-    </section>
+    </Section>
   );
 }
