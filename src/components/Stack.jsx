@@ -23,6 +23,7 @@ export default function Stack() {
           <StackIcon name="canva" className="size-13 ml-10" />
           <StackIcon name="git" className="size-13 ml-10" />
           <StackIcon name="github" className="size-13 ml-10" />
+          <StackIcon name="linux" className="size-13 ml-10" />
         </div>
         <div className="scroller inline-block">
           <StackIcon name="html5" className="size-13 ml-10" />
@@ -40,6 +41,7 @@ export default function Stack() {
           <StackIcon name="canva" className="size-13 ml-10" />
           <StackIcon name="git" className="size-13 ml-10" />
           <StackIcon name="github" className="size-13 ml-10" />
+          <StackIcon name="linux" className="size-13 ml-10" />
         </div>
       </div>
     </Section>
