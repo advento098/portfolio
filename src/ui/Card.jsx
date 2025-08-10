@@ -4,7 +4,7 @@ export default function Card({ children, alt, img, description, title }) {
       <img src={img} alt={alt} className="border-2 border-red-700 h-5/12" />
       <h1 className="text-black text-center">{title}</h1>
       <p>{description}</p>
-      {children}
+      <div className="h-2/12 0 border-2 border-red-700">{children}</div>
     </div>
   );
 }
