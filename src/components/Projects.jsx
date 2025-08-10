@@ -8,7 +8,7 @@ import StackCoin from "../ui/StackCoin";
 
 export default function Projects() {
   return (
-    <Section className="pt-0">
+    <Section id="MyWorks" className="pt-0">
       <Heading>My recent projects</Heading>
       <div className="cards flex flex-wrap items-center justify-center gap-5">
         <Card img="" title="Yt Clone" description="Coming soon...">

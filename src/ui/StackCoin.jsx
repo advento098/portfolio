@@ -5,7 +5,7 @@ export default function StackCoin({ techs }) {
     techs &&
     techs.map((val, idx) => {
       return (
-        <div className="rounded-full">
+        <div key={idx} className="rounded-full">
           <StackIcon name={val} />
         </div>
       );
