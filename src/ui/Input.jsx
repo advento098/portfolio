@@ -7,10 +7,11 @@ export default function Input({
   value,
   onChange,
   placeholder,
+  className = "",
 }) {
   const id = useId();
   return (
-    <div className="relative">
+    <div className={"relative " + className}>
       <input
         id={id}
         name={name}
@@ -26,3 +27,4 @@ export default function Input({
     </div>
   );
 }
+
