@@ -1,12 +1,9 @@
-// Project picture imports here
-import myReact from "../assets/react.svg";
+import { projects } from "../data/projects";
 
 import Card from "../ui/Card";
 import Heading from "../ui/Heading";
 import Section from "../ui/Section";
 import StackCoin from "../ui/StackCoin";
-
-import { projects } from "../data/projects";
 
 export default function Projects() {
   return (
