@@ -6,7 +6,7 @@ export default function Stack() {
     <Section>
       <h1 className="text-center text-2xl font-light">Tech and tools I use</h1>
       {/* Scrolling tech effect */}
-      <div className="w-11/12 container whitespace-nowrap overflow-hidden py-5 relative">
+      <div className="container whitespace-nowrap overflow-hidden py-5 relative">
         <div className="scroller inline-block">
           <StackIcon name="html5" className="size-13 ml-10" />
           <StackIcon name="css3" className="size-13 ml-10" />

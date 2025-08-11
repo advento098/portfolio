@@ -1,10 +1,63 @@
-export default function Card({ children, alt, img, description, title }) {
+// Lightweight class join utility (avoids extra dependency)
+function cx(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
+
+export default function Card({
+  title,
+  description,
+  eyebrow,
+  img,
+  alt = "",
+  href,
+  children,
+  className = "",
+}) {
+  const Comp = href ? "a" : "div";
+  const base =
+    "group relative flex flex-col rounded-xl p-5 transition duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00c4cc]";
+
+  const outline =
+    "bg-black/80 border border-[#00c4cc]/25 text-white shadow-[0_0_0_1px_rgba(0,196,204,0.15)] hover:border-[#00c4cc]/60 hover:shadow-[0_0_0_1px_#00c4cc,0_4px_18px_-4px_rgba(0,196,204,0.35)]";
+
+  const titleCls = cx(
+    "mb-2 text-lg font-bold leading-snug transition-colors text-white",
+    "group-hover:text-[#00c4cc]"
+  );
+  const bodyCls = cx("mb-4 text-sm leading-relaxed text-white/70");
+
   return (
-    <div className="card bg-white h-58 w-40 p-3">
-      <img src={img} alt={alt} className="border-2 border-red-700 h-5/12" />
-      <h1 className="text-black text-center">{title}</h1>
-      <p>{description}</p>
-      <div className="h-2/12 0 border-2 border-red-700">{children}</div>
-    </div>
+    <Comp href={href} className={cx(base, outline, className)}>
+      {/* Accent bar */}
+      <span className="pointer-events-none absolute inset-x-5 top-0 h-0.5 bg-gradient-to-r from-[#00c4cc] via-white/60 to-[#00c4cc] opacity-70" />
+
+      {img && (
+        <div className="mb-4 overflow-hidden rounded-md border border-[#00c4cc]/30">
+          <img
+            src={img}
+            alt={alt}
+            className="h-40 w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+            loading="lazy"
+          />
+        </div>
+      )}
+
+      {eyebrow && (
+        <div className="mb-1 text-[11px] font-semibold uppercase tracking-wider text-[#00c4cc]">
+          {eyebrow}
+        </div>
+      )}
+
+      {title && <h3 className={titleCls}>{title}</h3>}
+
+      {description && <p className={bodyCls}>{description}</p>}
+
+      {children && (
+        <div className="mt-auto flex flex-wrap gap-2 pt-2">{children}</div>
+      )}
+
+      {/* Hover ring accent (subtle) */}
+      <span className="pointer-events-none absolute inset-0 rounded-xl ring-0 ring-[#00c4cc]/0 transition duration-300 group-hover:ring-1 group-hover:ring-[#00c4cc]/50" />
+    </Comp>
   );
 }

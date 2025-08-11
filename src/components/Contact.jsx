@@ -3,7 +3,7 @@ import Section from "../ui/Section";
 
 export default function Contact() {
   return (
-    <Section id="Contact">
+    <Section id="">
       <Heading>Work with me</Heading>
     </Section>
   );
