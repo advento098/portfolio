@@ -1,10 +1,11 @@
 import StackIcon from "tech-stack-icons";
 import Section from "../ui/Section";
+import Heading from "../ui/Heading";
 
 export default function Stack() {
   return (
     <Section>
-      <h1 className="text-center text-2xl font-light">Tech and tools I use</h1>
+      <Heading>Tech and tools I use</Heading>
       {/* Scrolling tech effect */}
       <div className="container whitespace-nowrap overflow-hidden py-5 relative">
         <div className="scroller inline-block">

@@ -21,9 +21,9 @@ export default function TextArea({ value, onChange }) {
       <textarea
         name="message"
         ref={textBoxRef}
-        placeholder="Type your message here"
+        placeholder="Please write your message here..."
         onChange={onChange}
-        className="w-full text-wrap peer py-0 px-2 m-0 max-h-sm resize-none focus:outline-none focus:ring-0"
+        className="w-full text-wrap peer py-0 px-2 m-0 resize-none focus:outline-none focus:ring-0"
         required
       />
       <span className="absolute bottom-0 left-0 w-full h-0.5 z-20 bg-cyan-950" />

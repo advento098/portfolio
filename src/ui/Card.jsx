@@ -3,17 +3,15 @@ function cx(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Card({
+export function Card({
   title,
   description,
   eyebrow,
   img,
   alt = "",
-  href,
   children,
   className = "",
 }) {
-  const Comp = href ? "a" : "div";
   const base =
     "group relative flex flex-col rounded-xl p-5 transition duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00c4cc]";
 
@@ -27,7 +25,7 @@ export default function Card({
   const bodyCls = cx("mb-4 text-sm leading-relaxed text-white/70");
 
   return (
-    <Comp href={href} className={cx(base, outline, className)}>
+    <div className={cx(base, outline, className)}>
       {/* Accent bar */}
       <span className="pointer-events-none absolute inset-x-5 top-0 h-0.5 bg-gradient-to-r from-[#00c4cc] via-white/60 to-[#00c4cc] opacity-70" />
 
@@ -58,6 +56,24 @@ export default function Card({
 
       {/* Hover ring accent (subtle) */}
       <span className="pointer-events-none absolute inset-0 rounded-xl ring-0 ring-[#00c4cc]/0 transition duration-300 group-hover:ring-1 group-hover:ring-[#00c4cc]/50" />
-    </Comp>
+    </div>
+  );
+}
+
+export function CardCarousel({ title, src, alt }) {
+  return (
+    <div className="group border border-[#00c4cc]/25 inline-block ml-5 rounded-xl p-5">
+      {src && (
+        <div className="image rounded-xl overflow-hidden">
+          <img className="size-100" src={src} alt={alt} />
+        </div>
+      )}
+
+      {title && (
+        <h3 className="text-lg mt-5 text-center font-bold leading-snug transition-colors text-white">
+          {title}
+        </h3>
+      )}
+    </div>
   );
 }
