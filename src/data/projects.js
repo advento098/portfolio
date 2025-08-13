@@ -35,6 +35,36 @@ const projects = [{
     href: "/",
 }];
 
+const landingPages = [
+    {
+        title: "Space Voyage",
+        description: "A mock space game that challenges players to conquer a dangerous space voyage to save man-kind",
+        eyebrow: "Mock-up Game",
+        img: myReact,
+        coinName: ["html5, css3, react"],
+        buttonName: "View",
+        href: "/",
+    },
+    {
+        title: "Blackout Command",
+        description: "A PVP mock-up game designed to show the who's the strongest player on the battlefield",
+        eyebrow: "Mock-up Game",
+        img: myReact,
+        coinName: ["html5, css3, react"],
+        buttonName: "View",
+        href: "/",
+    },
+    {
+        title: "Silent Creed",
+        description: "An assasin's creed inspired mock-up game",
+        eyebrow: "Mock-up Game",
+        img: myReact,
+        coinName: ["html5, css3, react"],
+        buttonName: "View",
+        href: "/",
+    },
+]
+
 const capstoneImages = images;
 
 export { projects, capstoneImages };
