@@ -78,7 +78,7 @@ export const images = [
     {
         src: Compressor,
         alt: "RVM Compressor",
-        title: "Shredde Plastic Compressor"
+        title: "Shredded Plastic Compressor"
     },
     {
         src: Chain1,

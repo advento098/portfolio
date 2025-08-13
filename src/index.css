@@ -68,6 +68,14 @@ header {
   animation: iconScroller 15s infinite linear;
 }
 
+.capstone-scroller {
+  animation: iconScroller 60s infinite linear;
+}
+
+.capstone-scroller:hover {
+  animation-play-state: paused;
+}
+
 @keyframes iconScroller {
   from {
     transform: translateX(0);

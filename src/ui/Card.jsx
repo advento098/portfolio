@@ -62,18 +62,20 @@ export function Card({
 
 export function CardCarousel({ title, src, alt }) {
   return (
-    <div className="group border border-[#00c4cc]/25 inline-block ml-5 rounded-xl p-5">
-      {src && (
-        <div className="image rounded-xl overflow-hidden">
-          <img className="size-100" src={src} alt={alt} />
-        </div>
-      )}
+    <div className="ml-5 h-full inline-block leading-0 shrink-0">
+      <div className="group border border-[#00c4cc]/25 rounded-xl p-5 w-96">
+        {src && (
+          <div className="image rounded-xl overflow-hidden">
+            <img className="w-full h-auto aspect-square" src={src} alt={alt} />
+          </div>
+        )}
 
-      {title && (
-        <h3 className="text-lg mt-5 text-center font-bold leading-snug transition-colors text-white">
-          {title}
-        </h3>
-      )}
+        {title && (
+          <h3 className="text-lg mt-5 text-center font-bold leading-snug transition-colors text-white">
+            {title}
+          </h3>
+        )}
+      </div>
     </div>
   );
 }
