@@ -8,6 +8,13 @@ export default function Capstone() {
   return (
     <Section>
       <Heading>Our capstone</Heading>
+      <p className="text-center">
+        It is a <span className="font-bold">Reverse Vending Machine</span> that
+        converts 1.5-liter and single-use plastics to an{" "}
+        <span className="font-bold">Ecobrick</span> that can be used for small
+        scale constructions such as public furnitures, decorative walls, garden
+        pots, and many more!
+      </p>
       <div className="container border-red-700 overflow-hidden whitespace-nowrap relative">
         <div className="capstone-scroller inline-block">
           {capstoneImages.map((val, i) => (

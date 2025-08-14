@@ -18,8 +18,11 @@ import EBox2 from "./capstone/17.jpg";
 import Hopper from "./capstone/18.jpg";
 import Shredder2 from "./capstone/19.jpg";
 
+import BlackoutCommand from "./landing-pages/blackout-command.png"
+import SilentCreed from "./landing-pages/silent-creed.png"
+import SpaceVoyage from "./landing-pages/space-voyage.png"
 
-export const images = [
+const images = [
     {
         src: EBox1,
         alt: "Electronic Box",
@@ -117,7 +120,19 @@ export const images = [
     },
 ];
 
-// export {
-// EBox1, EBox2, Hopper, StepperMotor, Storage, Funnel,
-// Overview1, Overview2, Overview3, Wiper, Disk, Compressor,
-// Chain1, Chain2, Bearing, Shredder1, Shredder2, Defense, Award };
+const pages = [
+    {
+        src: BlackoutCommand,
+        alt: "blackout-command",
+    },
+    {
+        src: SilentCreed,
+        alt: "silent-creed",
+    },
+    {
+        src: SpaceVoyage,
+        alt: "space-voyage",
+    }
+]
+
+export { images, pages };

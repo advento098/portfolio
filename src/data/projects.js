@@ -1,34 +1,34 @@
 import myReact from "../assets/react.svg";
-import { images } from "../assets/images/index.js";
+import { images, pages } from "../assets/images/index.js";
 
 const projects = [{
-    title: "Yt clone",
-    description: "Short summary",
-    eyebrow: "Featured",
+    title: "TipTok",
+    description: "Coming soon",
+    eyebrow: "Personal Project",
     img: myReact,
-    coinName: ["react"],
+    coinName: ["html5", "css3", "react", "nodejs", "postgresql"],
     buttonName: "View",
     href: "/",
 }, {
     title: "BAFE Dashboard",
-    description: "Short summary",
-    eyebrow: "Featured",
+    description: "An inventory dashboard built on top of PHP and Yii2 framework. It is presented with the power of Chart.js along with bootstrap5.",
+    eyebrow: "Internship Project",
     img: myReact,
     coinName: ["html5", "php", "bootstrap4", "js"],
     buttonName: "View",
     href: "/",
 }, {
     title: "Payroll Web",
-    description: "Short summary",
-    eyebrow: "Featured",
+    description: "It is a Payroll Management Website for a security agency. The website monitors the attendance of every employees and calculates monthly payouts easily producing pdf payslips.",
+    eyebrow: "Client Project",
     img: myReact,
-    coinName: ["flutter", "react"],
+    coinName: ["flutter", "firebase"],
     buttonName: "View",
     href: "/",
 }, {
     title: "Chatmate",
-    description: "Upgrade are underway",
-    eyebrow: "Featured",
+    description: "Chatmate is an annonymous chat web application like omegle. This personal project trains my backend skills with express and socket.io.",
+    eyebrow: "Upgrades are underway",
     img: myReact,
     coinName: ["html5", "css3", "js", "react"],
     buttonName: "View",
@@ -37,20 +37,23 @@ const projects = [{
 
 const landingPages = [
     {
-        title: "Space Voyage",
-        description: "A mock space game that challenges players to conquer a dangerous space voyage to save man-kind",
+        title: "Blackout Command",
+        description: "A PVP mock-up game designed to show the who's the strongest player on the battlefield",
         eyebrow: "Mock-up Game",
-        img: myReact,
-        coinName: ["html5, css3, react"],
+        img: pages[0].src,
+        alt: pages[0].alt,
+        coinName: ["html5", "css3", "react"],
         buttonName: "View",
         href: "/",
     },
     {
-        title: "Blackout Command",
-        description: "A PVP mock-up game designed to show the who's the strongest player on the battlefield",
+        title: "Space Voyage",
+        description: "A mock space game that challenges players to conquer a dangerous space voyage to save man-kind",
         eyebrow: "Mock-up Game",
-        img: myReact,
-        coinName: ["html5, css3, react"],
+        img: pages[2].src,
+        alt: pages[2].alt,
+        customImageDivClass: "flex justify-start",
+        coinName: ["html5", "css3", "react"],
         buttonName: "View",
         href: "/",
     },
@@ -58,8 +61,9 @@ const landingPages = [
         title: "Silent Creed",
         description: "An assasin's creed inspired mock-up game",
         eyebrow: "Mock-up Game",
-        img: myReact,
-        coinName: ["html5, css3, react"],
+        img: pages[1].src,
+        alt: pages[1].alt,
+        coinName: ["html5", "css3", "react"],
         buttonName: "View",
         href: "/",
     },
@@ -67,4 +71,4 @@ const landingPages = [
 
 const capstoneImages = images;
 
-export { projects, capstoneImages };
+export { projects, capstoneImages, landingPages };

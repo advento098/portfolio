@@ -11,6 +11,7 @@ export function Card({
   alt = "",
   children,
   className = "",
+  imageClass = "",
 }) {
   const base =
     "group relative flex flex-col rounded-xl p-5 transition duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00c4cc]";
@@ -22,7 +23,15 @@ export function Card({
     "mb-2 text-lg font-bold leading-snug transition-colors text-white",
     "group-hover:text-[#00c4cc]"
   );
-  const bodyCls = cx("mb-4 text-sm leading-relaxed text-white/70");
+  const bodyCls = cx(
+    "mb-4 text-sm max-w-[260px] leading-relaxed text-white/70"
+  );
+
+  const imageBase =
+    "h-40 w-full object-cover transition duration-500 group-hover:scale-[1.03]";
+
+  const imageContainerBase =
+    "mb-4 overflow-hidden rounded-md border border-[#00c4cc]/30";
 
   return (
     <div className={cx(base, outline, className)}>
@@ -30,13 +39,8 @@ export function Card({
       <span className="pointer-events-none absolute inset-x-5 top-0 h-0.5 bg-gradient-to-r from-[#00c4cc] via-white/60 to-[#00c4cc] opacity-70" />
 
       {img && (
-        <div className="mb-4 overflow-hidden rounded-md border border-[#00c4cc]/30">
-          <img
-            src={img}
-            alt={alt}
-            className="h-40 w-full object-cover transition duration-500 group-hover:scale-[1.03]"
-            loading="lazy"
-          />
+        <div className={cx(imageContainerBase, imageClass)}>
+          <img src={img} alt={alt} className={imageBase} loading="lazy" />
         </div>
       )}
 

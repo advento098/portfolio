@@ -13,9 +13,9 @@ function App() {
       <HeroSection />
       <Stack />
       <Projects />
+      <LandingPages />
       <Capstone />
       <Contact />
-      <LandingPages />
     </>
   );
 }
