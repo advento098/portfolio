@@ -5,6 +5,7 @@ import HeroSection from "./components/HeroSection";
 import Projects from "./components/Projects";
 import Stack from "./components/Stack";
 import LandingPages from "./components/LandingPages";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <LandingPages />
       <Capstone />
       <Contact />
+      <Footer />
     </>
   );
 }

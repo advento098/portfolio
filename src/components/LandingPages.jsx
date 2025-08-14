@@ -7,7 +7,7 @@ import StackCoin from "../ui/StackCoin";
 
 export default function LandingPages() {
   return (
-    <Section className="pt-0">
+    <Section>
       <Heading>Landing pages I created</Heading>
       <div className="cards flex flex-wrap items-start justify-center gap-5">
         {landingPages.map((val, i) => (

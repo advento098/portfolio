@@ -8,7 +8,7 @@ import StackCoin from "../ui/StackCoin";
 
 export default function Projects() {
   return (
-    <Section id="MyWorks" className="pt-0">
+    <Section id="MyWorks">
       <Heading>My recent projects</Heading>
       <div className="cards flex flex-wrap items-start justify-center gap-5">
         {projects.map((val, i) => (
