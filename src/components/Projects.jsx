@@ -18,6 +18,7 @@ export default function Projects() {
             description={val.description}
             eyebrow={val.eyebrow}
             img={val.img}
+            className="w-[240px]"
           >
             {" "}
             <StackCoin techs={val.coinName} />
