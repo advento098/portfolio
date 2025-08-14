@@ -23,7 +23,7 @@ export default function LandingPages() {
             {" "}
             <StackCoin techs={val.coinName} />
             <a
-              onClick={(e) => e.preventDefault()}
+              target="_blank"
               href={val.href}
               className="text-xs text-center my-auto px-3 py-1 rounded-full bg-[#00c4cc] text-black font-semibold"
             >

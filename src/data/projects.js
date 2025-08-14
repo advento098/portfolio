@@ -1,11 +1,11 @@
-import myReact from "../assets/react.svg";
-import { images, pages } from "../assets/images/index.js";
+
+import { images, pages, projectImage } from "../assets/images/index.js";
 
 const projects = [{
     title: "TipTok",
     description: "Coming soon",
     eyebrow: "Personal Project",
-    img: myReact,
+    img: projectImage.test.src,
     coinName: ["html5", "css3", "react", "nodejs", "postgresql"],
     buttonName: "View",
     href: "/",
@@ -13,7 +13,7 @@ const projects = [{
     title: "BAFE Dashboard",
     description: "An inventory dashboard built on top of PHP and Yii2 framework. It is presented with the power of Chart.js along with bootstrap5.",
     eyebrow: "Internship Project",
-    img: myReact,
+    img: projectImage.test.src,
     coinName: ["html5", "php", "bootstrap4", "js"],
     buttonName: "View",
     href: "/",
@@ -21,7 +21,7 @@ const projects = [{
     title: "Payroll Web",
     description: "It is a Payroll Management Website for a security agency. The website monitors the attendance of every employees and calculates monthly payouts easily producing pdf payslips.",
     eyebrow: "Client Project",
-    img: myReact,
+    img: projectImage.payroll.src,
     coinName: ["flutter", "firebase"],
     buttonName: "View",
     href: "/",
@@ -29,7 +29,7 @@ const projects = [{
     title: "Chatmate",
     description: "Chatmate is an annonymous chat web application like omegle. This personal project trains my backend skills with express and socket.io.",
     eyebrow: "Upgrades are underway",
-    img: myReact,
+    img: projectImage.test.src,
     coinName: ["html5", "css3", "js", "react"],
     buttonName: "View",
     href: "/",
@@ -44,7 +44,7 @@ const landingPages = [
         alt: pages[0].alt,
         coinName: ["html5", "css3", "react"],
         buttonName: "View",
-        href: "/",
+        href: "https://advento098.github.io/blackout-command/",
     },
     {
         title: "Space Voyage",
@@ -55,7 +55,7 @@ const landingPages = [
         customImageDivClass: "flex justify-start",
         coinName: ["html5", "css3", "react"],
         buttonName: "View",
-        href: "/",
+        href: "https://advento098.github.io/space-voyage/",
     },
     {
         title: "Silent Creed",
@@ -65,7 +65,7 @@ const landingPages = [
         alt: pages[1].alt,
         coinName: ["html5", "css3", "react"],
         buttonName: "View",
-        href: "/",
+        href: "https://advento098.github.io/silent-creed/",
     },
 ]
 

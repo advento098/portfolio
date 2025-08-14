@@ -18,9 +18,12 @@ import EBox2 from "./capstone/17.jpg";
 import Hopper from "./capstone/18.jpg";
 import Shredder2 from "./capstone/19.jpg";
 
-import BlackoutCommand from "./landing-pages/blackout-command.png"
-import SilentCreed from "./landing-pages/silent-creed.png"
-import SpaceVoyage from "./landing-pages/space-voyage.png"
+import BlackoutCommand from "./landing-pages/blackout-command.png";
+import SilentCreed from "./landing-pages/silent-creed.png";
+import SpaceVoyage from "./landing-pages/space-voyage.png";
+
+import Test from "../../assets/react.svg";
+import Payroll from "./projects/payroll.png";
 
 const images = [
     {
@@ -135,4 +138,9 @@ const pages = [
     }
 ]
 
-export { images, pages };
+const projectImage = {
+    test: { src: Test, alt: "test" },
+    payroll: { src: Payroll, alt: "Payroll Management Web" },
+}
+
+export { images, pages, projectImage };
