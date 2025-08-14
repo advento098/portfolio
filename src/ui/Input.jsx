@@ -1,5 +1,9 @@
 import { useState, useId } from "react";
 
+function cx(...classnames) {
+  return classnames.join(" ");
+}
+
 export default function Input({
   error,
   name,
@@ -8,8 +12,11 @@ export default function Input({
   onChange,
   placeholder,
   className = "",
+  inputClass = "",
 }) {
   const id = useId();
+  const inputBaseClass = "peer focus:outline-none focus:ring-0 mb-3 px-2";
+
   return (
     <div className={"relative " + className}>
       <input
@@ -19,7 +26,7 @@ export default function Input({
         placeholder={placeholder}
         onChange={onChange}
         value={value}
-        className="peer focus:outline-none focus:ring-0 mb-3 px-2"
+        className={cx(inputBaseClass, inputClass)}
         required
       />
       <span className="absolute bottom-0 left-0 w-full h-0.5 z-20 bg-cyan-950" />
@@ -27,4 +34,3 @@ export default function Input({
     </div>
   );
 }
-

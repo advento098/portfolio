@@ -18,47 +18,52 @@ export default function Contact() {
     setValue((prev) => ({ ...prev, [key]: value }));
   };
 
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    console.log("Submitted");
+  };
+
   return (
     <Section id="Contact">
       <Heading>Work with me</Heading>
-      <form>
-        <div className="text-center">
-          {/* Name and email */}
-          <div className="flex gap-4">
-            <Input
-              name={"name"}
-              value={value.name}
-              onChange={handleOnChange}
-              placeholder={"Name/Company"}
-            />
-            <Input
-              name={"email"}
-              value={value.email}
-              type="email"
-              onChange={handleOnChange}
-              placeholder={"Your email"}
-            />
-          </div>
+      <form
+        onSubmit={handleOnSubmit}
+        className="w-10/12 max-w-2xl flex flex-col gap-5 items-center justify-center"
+      >
+        {/* Subject */}
+        <div className="mt-5 w-full flex flex-col items-center justify-center gap-8">
+          <Input
+            name={"name"}
+            value={value.name}
+            onChange={handleOnChange}
+            placeholder={"Name/Company"}
+            className="w-full"
+          />
 
-          {/* Subject */}
-          <div className="mt-5 flex flex-col items-center justify-center gap-5">
-            <Input
-              name={"subject"}
-              value={value.subject}
-              onChange={handleOnChange}
-              placeholder={"Subject"}
-              className="w-full text-left"
-            />
-            <TextArea onChange={handleOnChange} value={value.message} />
-          </div>
-          <button
-            type="submit"
-            className="bg-[#00c4cc] py-2 px-4 mt-5 rounded-3xl"
-            onSubmit={() => console.log("Submitted")}
-          >
-            Start conversation
-          </button>
+          <Input
+            name={"email"}
+            value={value.email}
+            type="email"
+            onChange={handleOnChange}
+            placeholder={"Your email"}
+            className="w-full"
+          />
+
+          <Input
+            name={"subject"}
+            value={value.subject}
+            onChange={handleOnChange}
+            placeholder={"Subject"}
+            className="w-full"
+          />
+          <TextArea onChange={handleOnChange} value={value.message} />
         </div>
+        <button
+          type="submit"
+          className="bg-[#00c4cc] py-2 px-4 mt-5 mx-1/2 rounded-3xl"
+        >
+          Start conversation
+        </button>
       </form>
     </Section>
   );
