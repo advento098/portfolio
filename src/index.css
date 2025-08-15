@@ -95,3 +95,30 @@ header {
     opacity: 100%;
   }
 }
+
+.transition {
+  transition: opacity ease-out;
+}
+
+.animate-orbGlow {
+  animation: orbGlow 5s ease-in-out infinite;
+}
+
+@keyframes orbGlow {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  20% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  80% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}

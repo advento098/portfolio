@@ -44,9 +44,26 @@ export default function HeroSection() {
           Get my CV
         </button>
         <div className="flex mt-3 gap-3">
-          <a className="fab fa-facebook text-2xl text-[#00c4cc]"></a>
-          <a className="fab fa-linkedin text-2xl text-[#00c4cc]"></a>
-          <a className="fab fa-github text-2xl text-[#00c4cc]"></a>
+          <a
+            href="https://github.com/advento098"
+            target="_blank"
+            className="text-2xl hover:text-[#00c4cc]"
+          >
+            <i className="fab fa-github"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/ponsanthonyadvento"
+            target="_blank"
+            className="text-2xl hover:text-[#00c4cc]"
+          >
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="mailto:ponsadvento08@gmail.com"
+            className="text-2xl hover:text-[#00c4cc]"
+          >
+            <i className="fas fa-envelope"></i>
+          </a>
         </div>
         <span className="material-symbols-outlined mt-7 size-10 text-center">
           swipe_down

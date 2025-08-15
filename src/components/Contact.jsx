@@ -39,7 +39,6 @@ export default function Contact() {
             placeholder={"Name/Company"}
             className="w-full"
           />
-
           <Input
             name={"email"}
             value={value.email}
