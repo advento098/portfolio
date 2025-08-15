@@ -6,22 +6,6 @@ export default function HeroSection() {
   const windowHeight = window.innerHeight;
   const middlePart = windowHeight / 2;
   return (
-    // <section
-    //   id="Home"
-    //   className="flex flex-col items-center h-screen border-2 pt-15"
-    // >
-    //   <div className="mt-20 text-center">
-    //     <h1 className="text-5xl">Pons Anthony Advento</h1>
-    //     <h3>Web Developer | Computer Engineer | Tech Enthusiast</h3>
-    //     <button>Have my CV</button>
-    //     {/* <span className="material-symbols-outlined">
-    //       keyboard_double_arrow_down
-    //     </span> */}
-    //   </div>
-    //   <div className="w-80">
-    //     <img src={HeroImage} alt="logo" />
-    //   </div>
-    // </section>
     <Section
       id="Home"
       className="relative overflow-hidden bg-black -z-10 pt-15 px-0"

@@ -96,12 +96,28 @@ header {
   }
 }
 
-.transition {
-  transition: opacity ease-out;
+.fadeIn {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.fadeOut {
+  animation: fadeOut 1s ease-out forwards;
 }
 
 .animate-orbGlow {
   animation: orbGlow 5s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 100;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes orbGlow {
