@@ -8,7 +8,7 @@ export default function Capstone() {
   return (
     <Section>
       <Heading>Our capstone</Heading>
-      <p className="text-center">
+      <p className="text-center max-w-6xl">
         It is a <span className="font-bold">Reverse Vending Machine</span> that
         converts 1.5-liter and single-use plastics to an{" "}
         <span className="font-bold">Ecobrick</span> that can be used for small

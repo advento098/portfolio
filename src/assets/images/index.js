@@ -24,6 +24,8 @@ import SpaceVoyage from "./landing-pages/space-voyage.png";
 
 import Test from "../../assets/react.svg";
 import Payroll from "./projects/payroll.png";
+import Chatmate from "./projects/chatmate.png";
+import BafeMis from "./projects/BafeMis.png";
 
 const images = [
     {
@@ -141,6 +143,8 @@ const pages = [
 const projectImage = {
     test: { src: Test, alt: "test" },
     payroll: { src: Payroll, alt: "Payroll Management Web" },
+    chatmate: { src: Chatmate, alt: "Chatmate" },
+    bafemis: { src: BafeMis, alt: "BafeMIS" }
 }
 
 export { images, pages, projectImage };

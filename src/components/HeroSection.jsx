@@ -6,15 +6,12 @@ export default function HeroSection() {
   const windowHeight = window.innerHeight;
   const middlePart = windowHeight / 2;
   return (
-    <Section
-      id="Home"
-      className="relative overflow-hidden bg-black -z-10 pt-15 px-0"
-    >
-      <div className="z-10 mt-5 mb-2 w-60">
+    <Section id="Home" className="relative overflow-hidden pt-15 px-0">
+      <div className="z-50 mt-5 mb-2 w-60">
         <img src={HeroImage} alt="logo" />
       </div>
       {/* Hero Details */}
-      <div className="text-center flex flex-col items-center">
+      <div className="text-center flex flex-col z-50 items-center">
         <h1 className="[font-size:_clamp(3.5rem,12vw,4.5rem)] font-bold text-[#00c4cc]">
           Pons Anthony Advento
         </h1>
@@ -24,9 +21,19 @@ export default function HeroSection() {
           as it combines creativity and critical thinking while solving
           practical solutions.
         </p>
-        <button className="mt-7 text-xl font-bold bg-[#00c4cc] rounded-2xl px-5 py-2">
-          Get my CV
+        <button class="mt-5 cursor-pointer relative group text-slate-950 transition-all flex items-center justify-center whitespace-nowrap rounded-lg hover:rotate-[3deg] will-change-transform duration-300 shadow-lg hover:shadow-xl h-12 text-lg pl-[5rem] pr-6 bg-[#00c4cc] shadow-[#00c5cc46] hover:shadow-[#00c5cc46]">
+          <div class="absolute left-0 top-0 mt-1 ml-1 bg-white text-slate-950 p-[0.35rem] bottom-1 group-hover:w-[calc(100%-0.5rem)] transition-all rounded-md duration-300 h-10 w-10">
+            <a href="/Advento_CV.pdf" target="_blank" rel="noopener noreferrer">
+              <i className="fas fa-download"></i>
+            </a>
+          </div>
+
+          <div>Get my CV</div>
+
+          <div class="bg-white absolute flex rounded-full animate-ping opacity-75 h-5 w-5 -top-2 -right-2"></div>
+          <div class="bg-white absolute flex rounded-full scale-[90%] h-5 w-5 -top-2 -right-2"></div>
         </button>
+
         <div className="flex mt-3 gap-3">
           <a
             href="https://github.com/advento098"
@@ -55,16 +62,14 @@ export default function HeroSection() {
       </div>
 
       {/* Background */}
-      <div className="absolute -z-10 inset-0 w-full h-full opacity-50">
+      <div className="absolute z-10 inset-0 w-full h-full opacity-50">
         {/* blurred circles */}
-        <div
-          className={`absolute size-200 -left-170 top-1/2 -translate-y-1/2 blur-3xl rounded-full bg-radial from-[#00c4cc] to-transparent`}
-        />
-        <div className="absolute size-200 -right-170 top-1/2 -translate-y-1/2 blur-3xl rounded-full bg-radial from-[#00c4cc] to-transparent" />
-        <div className="absolute size-30 top-30 left-40 blur-3xl rounded-full bg-radial from-[#00c4cc] to-transparent" />
-        <div className="absolute size-30 top-50 left-70 blur-3xl rounded-full bg-radial from-[#00c4cc] to-transparent" />
-        <div className="absolute size-30 bottom-20 left-40 blur-3xl rounded-full bg-radial from-[#00c4cc] to-transparent" />
-        <div className="absolute size-30 bottom-40 left-70 blur-3xl rounded-full bg-radial from-[#00c4cc] to-transparent" />
+        <div className="absolute size-180 -left-140 top-1/4 blur-3xl rounded-full bg-radial from-[#00c4cc] to-transparent" />
+        <div className="absolute size-160 -right-150 bottom-1/3 blur-3xl rounded-full bg-radial from-[#00c4cc] to-transparent" />
+        <div className="absolute size-40 top-12 right-1/5 blur-3xl rounded-full bg-radial from-[#00c4cc] to-transparent" />
+        <div className="absolute size-50 top-1/2 left-1/3 blur-3xl rounded-full bg-radial from-[#00c4cc] to-transparent" />
+        <div className="absolute size-30 bottom-20 left-1/4 blur-3xl rounded-full bg-radial from-[#00c4cc] to-transparent" />
+        <div className="absolute size-35 bottom-44 right-1/6 blur-3xl rounded-full bg-radial from-[#00c4cc] to-transparent" />
       </div>
     </Section>
   );
