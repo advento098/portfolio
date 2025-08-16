@@ -15,7 +15,7 @@ const projects = [{
     eyebrow: "Internship Project",
     img: projectImage.bafemis.src,
     alt: projectImage.bafemis.alt,
-    coinName: ["html5", "php", "bootstrap4", "js"],
+    coinName: ["html5", "php", "bootstrap4", "js", "mysql"],
     buttonName: "View",
     href: "/",
 }, {
@@ -29,7 +29,7 @@ const projects = [{
     href: "/",
 }, {
     title: "Chatmate",
-    description: "Chatmate is an annonymous chat web application like omegle. This personal project trains my backend skills with express and socket.io.",
+    description: "Chatmate is an anonymous chat web application like omegle. This personal project trains my backend skills with express and socket.io.",
     eyebrow: "Personal Project",
     img: projectImage.chatmate.src,
     alt: projectImage.chatmate.alt,
