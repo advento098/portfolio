@@ -15,7 +15,7 @@ export default function Capstone() {
         scale constructions such as public furnitures, decorative walls, garden
         pots, and many more!
       </p>
-      <div className="container border-red-700 overflow-hidden whitespace-nowrap relative">
+      <div className="capstone-container overflow-hidden w-full whitespace-nowrap relative">
         <div className="capstone-scroller inline-block">
           {capstoneImages.map((val, i) => (
             <CardCarousel

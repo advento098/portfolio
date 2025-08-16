@@ -42,7 +42,8 @@ header {
   mask-image: linear-gradient(to bottom, black 90%, transparent);
 }
 
-.container::before {
+.container::before,
+.capstone-container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -53,7 +54,8 @@ header {
   height: 100%;
 }
 
-.container::after {
+.container::after,
+.capstone-container::after {
   content: "";
   position: absolute;
   top: 0;
@@ -72,7 +74,7 @@ header {
   animation: iconScroller 60s infinite linear;
 }
 
-.capstone-scroller:hover {
+.capstone-container:hover .capstone-scroller {
   animation-play-state: paused;
 }
 

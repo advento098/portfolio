@@ -15,16 +15,16 @@ export default function HeroSection() {
       </div>
       {/* Hero Details */}
       <div className="text-center flex flex-col items-center">
-        <h1 className="text-7xl font-bold text-[#00c4cc]">
+        <h1 className="[font-size:_clamp(3.5rem,12vw,4.5rem)] font-bold text-[#00c4cc]">
           Pons Anthony Advento
         </h1>
         <h3>Web Developer | Computer Engineer | Tech Enthusiast</h3>
-        <p className="mt-5 px-7 text-sm/8">
+        <p className="mt-5 px-7 max-w-6xl [font-size:_min(1.2rem,5vw)]">
           I am a computer engineering graduate passionate about web development
           as it combines creativity and critical thinking while solving
           practical solutions.
         </p>
-        <button className="mt-7 text-xl font-bold max-w-4/12 bg-[#00c4cc] rounded-2xl px-5 py-2">
+        <button className="mt-7 text-xl font-bold bg-[#00c4cc] rounded-2xl px-5 py-2">
           Get my CV
         </button>
         <div className="flex mt-3 gap-3">

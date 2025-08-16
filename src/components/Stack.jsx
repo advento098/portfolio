@@ -22,6 +22,7 @@ export default function Stack() {
           <StackIcon name="ps" className="size-13 ml-10" />
           <StackIcon name="ai" className="size-13 ml-10" />
           <StackIcon name="canva" className="size-13 ml-10" />
+          <StackIcon name="figma" className="size-13 ml-10" />
           <StackIcon name="git" className="size-13 ml-10" />
           <StackIcon name="github" className="size-13 ml-10" />
           <StackIcon name="linux" className="size-13 ml-10" />
@@ -40,6 +41,7 @@ export default function Stack() {
           <StackIcon name="ps" className="size-13 ml-10" />
           <StackIcon name="ai" className="size-13 ml-10" />
           <StackIcon name="canva" className="size-13 ml-10" />
+          <StackIcon name="figma" className="size-13 ml-10" />
           <StackIcon name="git" className="size-13 ml-10" />
           <StackIcon name="github" className="size-13 ml-10" />
           <StackIcon name="linux" className="size-13 ml-10" />
