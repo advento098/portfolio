@@ -21,8 +21,8 @@ export default function HeroSection() {
           as it combines creativity and critical thinking while solving
           practical solutions.
         </p>
-        <button class="mt-5 cursor-pointer relative group text-slate-950 transition-all flex items-center justify-center whitespace-nowrap rounded-lg hover:rotate-[3deg] will-change-transform duration-300 shadow-lg hover:shadow-xl h-12 text-lg pl-[5rem] pr-6 bg-[#00c4cc] shadow-[#00c5cc46] hover:shadow-[#00c5cc46]">
-          <div class="absolute left-0 top-0 mt-1 ml-1 bg-white text-slate-950 p-[0.35rem] bottom-1 group-hover:w-[calc(100%-0.5rem)] transition-all rounded-md duration-300 h-10 w-10">
+        <button className="mt-5 cursor-pointer relative group text-slate-950 transition-all flex items-center justify-center whitespace-nowrap rounded-lg hover:rotate-[3deg] will-change-transform duration-300 shadow-lg hover:shadow-xl h-12 text-lg pl-[5rem] pr-6 bg-[#00c4cc] shadow-[#00c5cc46] hover:shadow-[#00c5cc46]">
+          <div className="absolute left-0 top-0 mt-1 ml-1 bg-white text-slate-950 p-[0.35rem] bottom-1 group-hover:w-[calc(100%-0.5rem)] transition-all rounded-md duration-300 h-10 w-10">
             <a href={Resume} target="_blank" rel="noopener noreferrer">
               <i className="fas fa-download"></i>
             </a>
@@ -30,8 +30,8 @@ export default function HeroSection() {
 
           <div>Get my CV</div>
 
-          <div class="bg-white absolute flex rounded-full animate-ping opacity-75 h-5 w-5 -top-2 -right-2"></div>
-          <div class="bg-white absolute flex rounded-full scale-[90%] h-5 w-5 -top-2 -right-2"></div>
+          <div className="bg-white absolute flex rounded-full animate-ping opacity-75 h-5 w-5 -top-2 -right-2"></div>
+          <div className="bg-white absolute flex rounded-full scale-[90%] h-5 w-5 -top-2 -right-2"></div>
         </button>
 
         <div className="flex mt-3 gap-3">
