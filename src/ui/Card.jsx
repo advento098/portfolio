@@ -70,7 +70,12 @@ export function CardCarousel({ title, src, alt }) {
       <div className="group border border-[#00c4cc]/25 rounded-xl p-5 w-96">
         {src && (
           <div className="image rounded-xl overflow-hidden">
-            <img className="w-full h-auto aspect-square" src={src} alt={alt} />
+            <img
+              className="w-full h-auto aspect-square"
+              src={src}
+              alt={alt}
+              loading="lazy"
+            />
           </div>
         )}
 

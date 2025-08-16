@@ -1,10 +1,10 @@
 import HeroImage from "../assets/portfolio_hero_image.svg";
 import Section from "../ui/Section";
 
+import Resume from "../assets/Advento_CV.pdf";
+
 export default function HeroSection() {
   // Place holder for height difference
-  const windowHeight = window.innerHeight;
-  const middlePart = windowHeight / 2;
   return (
     <Section id="Home" className="relative overflow-hidden pt-15 px-0">
       <div className="z-50 mt-5 mb-2 w-60">
@@ -23,7 +23,7 @@ export default function HeroSection() {
         </p>
         <button class="mt-5 cursor-pointer relative group text-slate-950 transition-all flex items-center justify-center whitespace-nowrap rounded-lg hover:rotate-[3deg] will-change-transform duration-300 shadow-lg hover:shadow-xl h-12 text-lg pl-[5rem] pr-6 bg-[#00c4cc] shadow-[#00c5cc46] hover:shadow-[#00c5cc46]">
           <div class="absolute left-0 top-0 mt-1 ml-1 bg-white text-slate-950 p-[0.35rem] bottom-1 group-hover:w-[calc(100%-0.5rem)] transition-all rounded-md duration-300 h-10 w-10">
-            <a href="/Advento_CV.pdf" target="_blank" rel="noopener noreferrer">
+            <a href={Resume} target="_blank" rel="noopener noreferrer">
               <i className="fas fa-download"></i>
             </a>
           </div>
