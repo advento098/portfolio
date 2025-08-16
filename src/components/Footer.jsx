@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react";
 export default function Footer() {
   const [orbs, setOrbs] = useState([]);
   const [fading, setFading] = useState(false);
-  const [existing, setExisting] = useState(true);
 
   // Generate random orb data
   const generateOrbs = () => {
@@ -34,27 +33,26 @@ export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-black text-white py-6 px-4">
       {/* Glowing orbs */}
-      {existing && (
-        <div
-          className={`absolute z-10 inset-0 w-full h-full pointer-events-none transition-opacity duration-1000 ${
-            fading ? "opacity-0" : "opacity-100"
-          }`}
-        >
-          {orbs.map((orb) => (
-            <div
-              key={orb.id}
-              style={{
-                width: orb.size,
-                height: orb.size,
-                top: `${orb.top}%`,
-                left: `${orb.left}%`,
-                animationDelay: `${orb.delay}s`,
-              }}
-              className={`absolute rounded-full blur-xl bg-cyan-400 animate-orbGlow`}
-            />
-          ))}
-        </div>
-      )}
+
+      <div
+        className={`absolute z-10 inset-0 w-full h-full pointer-events-none transition-opacity duration-1000 ${
+          fading ? "opacity-0" : "opacity-100"
+        }`}
+      >
+        {orbs.map((orb) => (
+          <div
+            key={orb.id}
+            style={{
+              width: orb.size,
+              height: orb.size,
+              top: `${orb.top}%`,
+              left: `${orb.left}%`,
+              animationDelay: `${orb.delay}s`,
+            }}
+            className={`absolute rounded-full blur-xl bg-cyan-400 animate-orbGlow`}
+          />
+        ))}
+      </div>
 
       {/* Footer content */}
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 relative z-20">
