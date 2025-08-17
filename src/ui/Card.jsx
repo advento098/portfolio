@@ -67,9 +67,9 @@ export function Card({
 export function CardCarousel({ title, src, alt }) {
   return (
     <div className="ml-5 h-full inline-block leading-0 shrink-0">
-      <div className="group border border-[#00c4cc]/25 rounded-xl p-5 w-96">
+      <div className="group border border-[#00c4cc]/25 rounded-xl p-5 w-fit">
         {src && (
-          <div className="image rounded-xl overflow-hidden">
+          <div className="image mx-auto [width:_min(70vw,20rem)] rounded-xl overflow-hidden">
             <img
               className="w-full h-auto aspect-square"
               src={src}
